@@ -7,7 +7,29 @@ public class TypeEx {
 //		intLongTest();
 //		floatDoubleTest();
 //		booleanEx();
-		charEx();
+//		charEx();
+		constantEx();
+	}
+	
+	//	상수 연습(Constant)
+	public static void constantEx() {
+		//	변하지 않는 데이터
+		//	final 을 선언부 앞에 붙이면 된다
+		//	상수 식별자는 모두 대문자, 여러 단어 결합시
+		//	단어 사이에 _
+		final double PI = 3.14159;
+		//	상수 값을 변경하면 해당 상수를 사용한 모든 코드가
+		//	변경
+		//	1. 코드의 가독성
+		//	2. 코드 유지 보수의 장점
+		final int SPEED_LIMIT = 110;
+		
+		System.out.println("PI = " + PI);
+		System.out.println("제한속도 = " + SPEED_LIMIT);
+		
+//		SPEED_LIMIT = 80; // 상수이므로 변경 불가하게 된다
+		System.out.println("제한속도 = " + SPEED_LIMIT);
+		
 	}
 	
 	//	char 형 연습
