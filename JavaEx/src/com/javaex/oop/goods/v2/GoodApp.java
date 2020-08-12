@@ -10,18 +10,30 @@ public class GoodApp {
 		//	필드에 접근
 		//	name, price 필드는 private이므로
 		//		접근 불가(은닉)
+		/*
 		notebook.name = "LG Gram";
 		notebook.price = 1500000;
 		
 		System.out.printf("%s, %d원%n", 
 				notebook.name, notebook.price);
+		*/
+		//	setter를 이용한 우회 접근
+		notebook.setName("LG Gram");
+		notebook.setPrice(1500000);
+		//	메서드 호출
+		notebook.showInfo();
 		
 		Goods smartphone = new Goods();
+		/*
 		smartphone.name = "iPhone SE";
 		smartphone.price = 600000;
 		
 		System.out.printf("%s, %d원%n",
 				smartphone.name, smartphone.price);
+		*/
+		smartphone.setName("iPhone SE");
+		smartphone.setPrice(600000);
+		smartphone.showInfo();
 	}
 
 }
