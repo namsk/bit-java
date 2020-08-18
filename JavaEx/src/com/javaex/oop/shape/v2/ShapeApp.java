@@ -29,7 +29,7 @@ public class ShapeApp {
 	
 	private static void printObject(Drawable obj) {
 		//	Point와 Circle, Rectagle은 같은 상속 관계에 있지 않지만
-		//	인터페이스가 동일하므노 같은 그룹으로 묶을 수 있다.
+		//	인터페이스가 동일하므로 같은 그룹으로 묶을 수 있다.
 		obj.draw();
 		
 	}
